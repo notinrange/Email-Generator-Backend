@@ -6,9 +6,9 @@
 git clone https://github.com/notinrange/Email-Generator-Backend.git
 ```
 
-- **Step 2** Run jre file
+- **Step 2** Run jar file
 ```
-java -jre 
+java -jqr email-writer-sb-0.0.1-SNAPSHOT.jar
 ```
 
 for frontend follow readme file steps of this repository
