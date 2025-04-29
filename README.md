@@ -6,7 +6,7 @@
 git clone https://github.com/notinrange/Email-Generator-Backend.git
 ```
 
-- **Step 2** Run jar file
+- **Step 2** Download and run jar file drive link [java -jar email-writer-sb-0.0.1-SNAPSHOT.jar](https://drive.google.com/file/d/1seHVbcPNsxF96tOu74j2V3sr-GTJei9W/view?usp=sharing)
 ```
 java -jar email-writer-sb-0.0.1-SNAPSHOT.jar
 ```
