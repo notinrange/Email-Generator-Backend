@@ -7,3 +7,4 @@ public class EmailRequest {
     private String emailContent;
     private String tone;
 }
+// using lombok no need to create getter and setters 
