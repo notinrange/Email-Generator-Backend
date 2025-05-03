@@ -18,7 +18,7 @@ public class EmailGeneratorService {
     @Value("${gemini.api.url}") 
     private String geminiApiUrl;
     
-    @Value("${gemini.api.key}") // Fixed: using the correct property for the API key
+    @Value("${gemini.api.key}") 
     private String geminiApiKey;
 
     public EmailGeneratorService(WebClient.Builder webClientBuilder){
@@ -26,10 +26,10 @@ public class EmailGeneratorService {
     }
 
     public String generateEmailReply(EmailRequest emailRequest) {
-    // Build the prompt
+    // build the prompt
     String prompt = buildPrompt(emailRequest);
 
-    // Craft the request body
+    // craft the requsst body
     Map<String, Object> requestBody = Map.of(
         "contents", new Object[]{
             Map.of("parts", new Object[]{
@@ -38,7 +38,7 @@ public class EmailGeneratorService {
         }
     );
 
-    // Build the full URI with the API key as a query parameter using fromHttpUrl()
+    //build the full URI with the API key as a query parameter using fromHttpUrl()
     String response = webClient.post()
         .uri(uriBuilder -> 
             UriComponentsBuilder
@@ -57,7 +57,7 @@ public class EmailGeneratorService {
                 
     private String extractResponseContent(String response) {
         try {
-            ObjectMapper mapper = new ObjectMapper(); // For JSON <-> Java object conversion
+            ObjectMapper mapper = new ObjectMapper(); // For JSON to java and java to json object conversion
             JsonNode rootNode = mapper.readTree(response);
             return rootNode.path("candidates")
                            .get(0)
