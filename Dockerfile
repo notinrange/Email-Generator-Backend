@@ -1,14 +1,6 @@
-# Use an official OpenJDK runtime as a parent image
-FROM openjdk:17-jdk-alpine
+FROM amazoncorretto:21-alpine-jdk
 
-# Set the working directory
-WORKDIR /app
+COPY target/email-*.jar /email.jar
 
-# Copy the application's jar to the container
-COPY target/email-writer-sb.jar app.jar
+CMD ["java","-jar","/email.jar"]
 
-# Make port 8080 available to the world outside this container
-EXPOSE 8080
-
-# Run the jar file
-ENTRYPOINT ["java", "-jar", "app.jar"]
