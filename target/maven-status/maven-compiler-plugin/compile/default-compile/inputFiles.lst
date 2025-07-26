@@ -1,0 +1,9 @@
+/home/rahul/Desktop/code/email-writer-sb/src/main/java/com/email/writer/EmailWriterSbApplication.java
+/home/rahul/Desktop/code/email-writer-sb/src/main/java/com/email/writer/app/ComposeRequest.java
+/home/rahul/Desktop/code/email-writer-sb/src/main/java/com/email/writer/app/EmailGeneratorController.java
+/home/rahul/Desktop/code/email-writer-sb/src/main/java/com/email/writer/app/EmailGeneratorService.java
+/home/rahul/Desktop/code/email-writer-sb/src/main/java/com/email/writer/app/EmailMessage.java
+/home/rahul/Desktop/code/email-writer-sb/src/main/java/com/email/writer/app/EmailRequest.java
+/home/rahul/Desktop/code/email-writer-sb/src/main/java/com/email/writer/app/RedisConfig.java
+/home/rahul/Desktop/code/email-writer-sb/src/main/java/com/email/writer/app/ReplyResponse.java
+/home/rahul/Desktop/code/email-writer-sb/src/main/java/com/email/writer/app/UserProfile.java

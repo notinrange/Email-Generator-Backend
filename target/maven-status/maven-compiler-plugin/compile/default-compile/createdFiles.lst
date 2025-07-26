@@ -1,0 +1,9 @@
+com/email/writer/app/EmailGeneratorController.class
+com/email/writer/app/UserProfile.class
+com/email/writer/app/EmailMessage.class
+com/email/writer/EmailWriterSbApplication.class
+com/email/writer/app/EmailRequest.class
+com/email/writer/app/ReplyResponse.class
+com/email/writer/app/ComposeRequest.class
+com/email/writer/app/RedisConfig.class
+com/email/writer/app/EmailGeneratorService.class
